@@ -1,0 +1,18 @@
+from claseArchivo import *
+#main
+nomb = input('Nombre del archivo:')
+archivo = Archivo(nomb)
+archivo.muestra()
+print("\n1._ El numero de vocales es: ", archivo.cuentaVocales())
+print("\n2._ El numero de consonantes es: ", archivo.cuentaConsonantes())
+print("\n3._ El numero de signos de puntuación es: ", archivo.cuentasigpuntuacion())
+print("\n4._ El numero de espacios: ", archivo.cuentaespacio())
+print("\n5._ El numero de palabras: ", archivo.cuentapalabras())
+print("\n6._ El numero de lineas: ", archivo.cuentaslinea())
+print("\n7._ El numero de mayusculas es: ", archivo.cuentamayusculas())
+print("\n8._ El numero de minusculas es: ", archivo.cuentaminusculas())
+archivo.copiarch("copia.txt")
+print("\n10._ Convierte a mayusculas:\n", archivo.convmayusculas())
+print("\n11._ Convierte a minusculas:\n", archivo.convminusculas())
+print("\n12._ Muestra el texto en hexadecimal")
+archivo.hexadecimal()
